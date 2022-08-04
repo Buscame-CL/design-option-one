@@ -46,26 +46,26 @@ const Sidebar = forwardRef((props, ref) => {
           <HomeIcon /> Home
         </li>
         <li>
-          <ClockIcon /> Search History
+          <ClockIcon /> Busquedas Anteriores
         </li>
         <li>
           <CollectionIcon /> PDF's
         </li>
         <li>
-          <StatusOfflineIcon /> Offline Searches
+          <StatusOfflineIcon /> Busquedas Offline
         </li>
         <hr />
         <li>
-          <AdjustmentsIcon /> Settings
+          <AdjustmentsIcon /> Configuracion
         </li>
         <li>
-          <UserGroupIcon /> Data & Privacy
+          <UserGroupIcon /> Privacidad & Datos
         </li>
         <li>
-          <InformationCircleIcon /> Help & Support
+          <InformationCircleIcon /> Suporte & Ayuda
         </li>
         <li>
-          <ChatAltIcon /> Send Feedback
+          <ChatAltIcon /> Envia tu Feedback
         </li>
       </ul>
     </div>
