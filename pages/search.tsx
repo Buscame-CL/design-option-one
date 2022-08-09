@@ -128,7 +128,7 @@ const Search = ({ results }) => {
         </form>
 
         <ul className={styles.options}>
-          <li className={`icon ${styles.icon} ${styles.active}`}>
+          {/* <li className={`icon ${styles.icon} ${styles.active}`}>
             <DocumentSearchIcon /> <span>All</span>
           </li>
           <li className={`icon ${styles.icon}`}>
@@ -142,7 +142,7 @@ const Search = ({ results }) => {
           </li>
           <li className={`icon ${styles.icon}`}>
             <MapIcon /> <span>Maps</span>
-          </li>
+          </li> */}
           <li className={`icon ${styles.icon}`}>
             <CogIcon /> <span>Search Options</span>
           </li>
