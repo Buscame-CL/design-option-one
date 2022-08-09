@@ -1,7 +1,7 @@
 import { MenuAlt1Icon, MoonIcon, SearchIcon, SparklesIcon, SunIcon, UserCircleIcon } from '@heroicons/react/outline';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Apps from '../components/Apps';
 import Sidebar from '../components/Sidebar';
 
@@ -12,6 +12,7 @@ export default function Home() {
   const sidebarRef = useRef(null);
   const searchInput = useRef(null);
   const searchBox = useRef(null);
+  const [searchType, setSearchType] = useState(true);
 
   const toggleTheme = (e: any) => {
     e.preventDefault();
@@ -40,7 +41,7 @@ export default function Home() {
         <title>Buscame.CL</title>
         <link
           rel="icon"
-          href="/media/logo-icon-crop.png"
+          href="/media/ico.png"
         />
       </Head>
 
@@ -62,7 +63,7 @@ export default function Home() {
             <SunIcon className="sun" />
             <MoonIcon className="moon" />
           </div>
-         {/* <Apps />*/}
+          {/* <Apps />*/}
           <div className="user">
             <UserCircleIcon />
             <span className="uid">
@@ -92,10 +93,9 @@ export default function Home() {
               <SearchIcon className="searchIcon" />
             </button>
           </form>
-{/*          <button className="lucky">
-            <SparklesIcon />
-            Feeling Lucky?
-</button>*/}
+          <button className="lucky" onClick={() => setSearchType(!searchType)}>
+            {searchType ? "Busqueda por Persona Natural" : "Busqueda por Persona Juridica"}
+          </button>
         </div>
       </main>
     </div>
